@@ -11,6 +11,7 @@ import App from "./views/App";
 
 import Home from "./pages/Home";
 import Contattami from "./pages/Contattami";
+import Posts from "./pages/Posts";
 
 import VueRouter from "vue-router";
 import Vue from "vue";
@@ -27,6 +28,11 @@ const router = new VueRouter({
             path:'/contattami',
             name: 'contattami',
             component: Contattami
+        },
+        {
+            path:'/posts',
+            name: 'posts',
+            component: Posts
         }
     ]
 });

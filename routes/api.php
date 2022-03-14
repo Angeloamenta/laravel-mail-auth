@@ -23,3 +23,8 @@ Route::namespace('Api')
 ->group(function(){
     Route::post('/contattami', 'ContactController@store');
 });
+
+Route::namespace('Api')
+->group(function(){
+    Route::get('/posts', 'Api\PostController@index');
+});
