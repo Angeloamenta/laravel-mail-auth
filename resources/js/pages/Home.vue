@@ -1,7 +1,11 @@
 <template>
-  <div>
-      Home
-  </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            Home
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
