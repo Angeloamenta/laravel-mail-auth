@@ -3,6 +3,9 @@
     <div class="row">
         <div class="col">
             Posts
+            <div v-for="(post, index) in posts" :key="index">
+                {{post.title}}
+            </div>
         </div>
     </div>
 </div>
@@ -14,7 +17,7 @@ export default {
     name:'posts',
     data() {
         return {
-
+            posts: []
         }
     },
     created() {
@@ -23,6 +26,7 @@ export default {
          console.log(results);
          // se volessi visualizzare l'api in random ordero dovrei 
          //aggiungere /random in axios e cancellare .posts in this.posts
+         this.posts = results.data.results.data;
     //  console.log('prova', this.posts.length)
      })
     },

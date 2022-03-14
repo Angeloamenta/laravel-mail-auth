@@ -2092,17 +2092,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'posts',
   data: function data() {
-    return {};
+    return {
+      posts: []
+    };
   },
   created: function created() {
+    var _this = this;
+
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('http://localhost:8000/api/posts').then(function (results) {
       console.log(results); // se volessi visualizzare l'api in random ordero dovrei 
       //aggiungere /random in axios e cancellare .posts in this.posts
-      //  console.log('prova', this.posts.length)
+
+      _this.posts = results.data.results.data; //  console.log('prova', this.posts.length)
     });
   }
 });
@@ -38047,22 +38055,27 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col" },
+        [
+          _vm._v("\r\n            Posts\r\n            "),
+          _vm._l(_vm.posts, function (post, index) {
+            return _c("div", { key: index }, [
+              _vm._v(
+                "\r\n                " + _vm._s(post.title) + "\r\n            "
+              ),
+            ])
+          }),
+        ],
+        2
+      ),
+    ]),
+  ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col" }, [
-          _vm._v("\r\n            Posts\r\n        "),
-        ]),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
