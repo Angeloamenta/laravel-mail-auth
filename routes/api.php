@@ -24,7 +24,8 @@ Route::namespace('Api')
     Route::post('/contattami', 'ContactController@store');
 });
 
-Route::namespace('Api')
-->group(function(){
-    Route::get('/posts', 'Api\PostController@index');
-});
+// Route::namespace('Api')
+// ->group(function(){
+//     Route::get('/posts', 'Api\PostController@index');
+// });
+Route::get('/posts', 'Api\PostController@index');
