@@ -49,7 +49,7 @@ export default {
              this.sending = true;
              this.success = false;
 
-             axios.post('/api/contacts',
+             axios.post('/api/contattami',
              {
                'name': this.name,
                'email': this.email,

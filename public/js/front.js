@@ -2015,7 +2015,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.sending = true;
       this.success = false;
-      axios.post('/api/contacts', {
+      axios.post('/api/contattami', {
         'name': this.name,
         'email': this.email,
         'message': this.message
