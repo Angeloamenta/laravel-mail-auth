@@ -37,7 +37,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        @dd($request->all());
+        $validateData = $request->validate ([
+            'title'=> 'required|max:255',
+             'image' =>'nullable|image'
+
+        ]);
+
+        $data = $request->all();
+        $post = new Post();
+        $post->fill($data);
+        $post->save();
+        return redirect('admin.posts.index');
     }
 
     /**
