@@ -12,6 +12,8 @@ import App from "./views/App";
 import Home from "./pages/Home";
 import Contattami from "./pages/Contattami";
 import Posts from "./pages/Posts";
+import Accesso from "./pages/Accesso";
+
 
 import VueRouter from "vue-router";
 import Vue from "vue";
@@ -33,6 +35,11 @@ const router = new VueRouter({
             path:'/posts',
             name: 'posts',
             component: Posts
+        },
+        {
+            path:'/accesso',
+            name: 'accesso',
+            component: Accesso
         }
     ]
 });
