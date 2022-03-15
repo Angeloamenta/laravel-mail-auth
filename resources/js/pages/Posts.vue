@@ -5,6 +5,9 @@
             Posts
             <div v-for="(post, index) in posts" :key="index">
                 {{post.title}}
+                <div>
+                    <img :src="post.image" alt="">
+                </div>
             </div>
         </div>
     </div>

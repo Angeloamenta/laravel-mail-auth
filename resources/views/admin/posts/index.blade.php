@@ -19,7 +19,7 @@
                       <td>{{$post['title']}}</td>
                       <td>{{$post['image']}}</td>
                       <td>{{$post['created_at']}}</td>
-                      <td><a href="" class="btn btn-primary">View</a></td>
+                      <td><a href="{{ route('admin.posts.show', $post) }}" class="btn btn-primary">View</a></td>
                       <td><a href="" class="btn btn-primary">Edit</a></td>
                       <td><a href="" class="btn btn-danger">Delete</a></td>
                     </tr>

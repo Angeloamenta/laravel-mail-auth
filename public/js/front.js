@@ -2109,6 +2109,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'posts',
@@ -38744,8 +38747,11 @@ var render = function () {
           _vm._l(_vm.posts, function (post, index) {
             return _c("div", { key: index }, [
               _vm._v(
-                "\r\n                " + _vm._s(post.title) + "\r\n            "
+                "\r\n                " +
+                  _vm._s(post.title) +
+                  "\r\n                "
               ),
+              _c("div", [_c("img", { attrs: { src: post.image, alt: "" } })]),
             ])
           }),
         ],

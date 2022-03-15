@@ -57,7 +57,7 @@ class PostController extends Controller
         $post = new Post();
         $post->fill($data);
         $post->save();
-        return redirect('admin.posts.index');
+        return redirect()->route('admin.posts.show', $post);
     }
 
     /**
@@ -66,9 +66,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        //
+        return view('admin.posts.show', ['post' => $post]);
     }
 
     /**
