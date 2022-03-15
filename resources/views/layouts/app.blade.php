@@ -70,6 +70,9 @@
                             <li class="nav-item">
                                 <a class="dropdown-item" href="{{ route('admin.posts.index') }}">Posts</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="{{ route('admin.posts.create') }}">Crea Posts</a>
+                            </li>
                         @endguest
                     </ul>
                 </div>
