@@ -2071,6 +2071,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'home'
 });
@@ -38680,7 +38688,21 @@ var staticRenderFns = [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col" }, [
-            _vm._v("\r\n            Home\r\n        "),
+            _c("p", [
+              _vm._v(
+                "\r\n            Ho sempre avuto la passione per la tecnologia, cosi dopo varie esperienze lavorative, non collegate tra loro, che mi hanno aiutato a crescere a livello personale e lavorativo, ho deciso di iniziare a farmi strada nel mondo dell'informatica diventando un web developer.\r\n            "
+              ),
+            ]),
+            _vm._v(" "),
+            _c("h5", [_vm._v("Mi definisco:")]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [_vm._v("Educato e rispettoso del prossimo")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Empatico")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("Tengo in modo particolare alla puntualità")]),
+            ]),
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col" }, [

@@ -10,6 +10,7 @@ class Post extends Model
     [
         'title',
         'image',
+        'created_at'
         
     ];
 }
