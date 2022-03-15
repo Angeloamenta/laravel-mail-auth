@@ -21,7 +21,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    {{-- <div id="app"> --}}
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -67,15 +67,20 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="{{ route('admin.posts.index') }}">Posts</a>
+                            </li>
                         @endguest
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+        <div id="app">
+            <main>
+                @yield('content')
+            </main>
+        </div>
+    {{-- </div> --}}
 </body>
 </html>
